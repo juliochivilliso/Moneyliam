@@ -1,0 +1,38 @@
+.payments-container {
+    padding: 20px 0;
+}
+
+.payment-table {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.payment-table th {
+    text-align: left;
+    padding: 15px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.payment-table td {
+    padding: 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.payment-status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.status-paid {
+    background: #d5f4e6;
+    color: #27ae60;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
