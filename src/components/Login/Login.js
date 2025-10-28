@@ -112,7 +112,7 @@ const Login = () => {
     <div className="login-container">
       <div className="container">
         <div className="left-panel">
-          <div className="app-name">MoneyLoanApp</div>
+          <div className="app-name">MoneyLiamApp</div>
           <div className="app-tagline">Tu solución financiera rápida y confiable</div>
           
           <div className="graphic">

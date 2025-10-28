@@ -9,7 +9,7 @@ const TopBar = ({ onMenuToggle, userData }) => {
         </button>
         <div className="search-box">
           <i className="fas fa-search"></i>
-          <input type="text" placeholder="Buscar..." />
+          <input type="text" placeholder="Buscar...." />
         </div>
       </div>
       

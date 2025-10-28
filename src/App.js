@@ -8,6 +8,7 @@ import Payments from './components/Payments/Payments';
 import Reports from './components/Reports/Reports';
 import Settings from './components/Settings/Settings';
 import Login from './components/Login/Login';
+import Calculadora from './components/Calculadora/Calculadora';
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/payments" element={<Payments />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/calculadora" element={<Calculadora />} />
           <Route path="/" element={<Navigate to="/login" replace />} />
         </Routes>
       </div>

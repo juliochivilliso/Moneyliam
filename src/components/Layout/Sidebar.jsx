@@ -12,6 +12,7 @@ const Sidebar = ({ isCollapsed, onToggle, activeMenu }) => {
     { path: '/payments', icon: 'fas fa-money-bill-wave', label: 'Pagos', key: 'payments' },
     { path: '/reports', icon: 'fas fa-chart-bar', label: 'Reportes', key: 'reports' },
     { path: '/settings', icon: 'fas fa-cog', label: 'Configuración', key: 'settings' },
+    { path: '/calculadora', icon: 'fas fa-calculator', label: 'Calculadora', key: 'calculadora' },
   ];
 
   const handleMenuClick = (path, key) => {
