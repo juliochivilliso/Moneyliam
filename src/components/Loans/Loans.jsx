@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import MainLayout from '../Layout/MainLayout';
 import LoanList from './LoanList';
 import LoanForm from './LoanForm';
@@ -7,10 +7,10 @@ import './Loans.css';
 const Loans = () => {
   const [showForm, setShowForm] = useState(false);
   const [editingLoan, setEditingLoan] = useState(null);
+  const navigate = useNavigate();
 
   const handleNewLoan = () => {
-    setEditingLoan(null);
-    setShowForm(true);
+    navigate('/loans/new');
   };
 
   const handleEditLoan = (loan) => {
@@ -37,9 +37,9 @@ const Loans = () => {
         </div>
 
         {showForm ? (
-          <LoanForm 
-            loan={editingLoan} 
-            onClose={handleCloseForm} 
+          <LoanForm
+            loan={editingLoan}
+            onClose={handleCloseForm}
             onSave={handleCloseForm}
           />
         ) : (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 //import Dashboard from './components/Dashboard';
-import Dashboard from './components/Dashboard/Dashboard';
+import Dashboard from './components/Dashboard/AdminDashboard';
 import Loans from './components/Loans/Loans';
 import Clients from './components/Clients/Clients';
 import Payments from './components/Payments/Payments';
@@ -9,6 +9,7 @@ import Reports from './components/Reports/Reports';
 import Settings from './components/Settings/Settings';
 import Login from './components/Login/Login';
 import Calculadora from './components/Calculadora/Calculadora';
+import LoanOrigination from './components/Loans/LoanOrigination';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/reports" element={<Reports />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/calculadora" element={<Calculadora />} />
+          <Route path="/loans/new" element={<LoanOrigination />} />
           <Route path="/" element={<Navigate to="/login" replace />} />
         </Routes>
       </div>
